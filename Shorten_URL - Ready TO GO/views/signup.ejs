@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .signup-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .signup-container h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .signup-container label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .signup-container input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .signup-container input:focus {
+      border-color: #ff7675;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255,118,117,0.5);
+    }
+
+    .signup-container button {
+      width: 100%;
+      padding: 0.9rem;
+      border: none;
+      border-radius: 8px;
+      background: #d63031;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .signup-container button:hover {
+      background: #b82525;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+    <form action="/user" method="post" autocomplete="off">
+      <label for="name">Enter Name</label>
+      <input type="text" id="name" name="name" required autocomplete="off">
+
+      <label for="email">Enter Email</label>
+      <input type="email" id="email" name="email" required autocomplete="off">
+
+      <label for="password">Enter Password</label>
+      <input type="password" id="password" name="password" required autocomplete="new-password">
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
+ 
